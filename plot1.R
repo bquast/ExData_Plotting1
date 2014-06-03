@@ -32,7 +32,6 @@ new.names <- tolower( new.names )
 names( Power.Consumption ) <- new.names
 rm(new.names)
 
-
 # recode dates and times
 Power.Consumption$date <- as.Date (Power.Consumption$date, '%d/%m/%Y' )
 Power.Consumption <- subset( Power.Consumption, date == '2007-02-01' | date == '2007-02-02' ) 
